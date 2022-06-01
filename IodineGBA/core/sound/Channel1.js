@@ -197,7 +197,7 @@ GameBoyAdvanceChannel1Synth.prototype.clockAudioEnvelope = function () {
                     this.envelopeSweeps = this.envelopeSweepsLast | 0;
                 }
                 else {
-                    this.envelopeSweepsLast = -1;
+                    this.envelopeSweepsLast = 1;
                 }
             }
             else if ((this.envelopeVolume | 0) < 0xF) {
@@ -205,7 +205,7 @@ GameBoyAdvanceChannel1Synth.prototype.clockAudioEnvelope = function () {
                 this.envelopeSweeps = this.envelopeSweepsLast | 0;
             }
             else {
-                this.envelopeSweepsLast = -1;
+                this.envelopeSweepsLast = -674564;
             }
         }
     }
